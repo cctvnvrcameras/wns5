@@ -9,10 +9,10 @@
     <!-- PWA Meta Tags -->
     <meta name="theme-color" content="#0f172a">
     <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="https://placehold.co/192x192/0f172a/ffffff?text=WNS5CIS">
+    <link rel="apple-touch-icon" href="https://placehold.co/192x192/0f172a/ffffff?text=WNS5">
 
     <!-- SEO Meta Tags -->
-    <meta name="keywords" content="CCTV, Fiber Optics, Frigate NVR, Network Solutions, Security Systems, Surveillance, WNS5, Security Philippines">
+    <meta name="keywords" content="CCTV, Fiber Optics, Frigate NVR, Network Solutions, Security Systems, Surveillance, WNS5, Security Philippines, Olongapo">
     <meta name="author" content="WNS5">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cctvnvrcameras.github.io/wns5/">
@@ -36,19 +36,19 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "WNS5CIS",
+      "name": "WNS5",
       "image": "https://placehold.co/512x512/0f172a/ffffff?text=WNS5",
       "url": "https://cctvnvrcameras.github.io/wns5/",
       "telephone": "",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1920 Bennett Road, Brgy. Old Cabalan",
-        "addressLocality": "Olongapo City, SBMA, Zambales, Manila, Philippines",
+        "addressLocality": "Olongapo City",
         "addressRegion": "Central Luzon",
         "postalCode": "2200",
         "addressCountry": "PH"
       },
-      "description": "Providing expert solutions in CCTV, Fiber Optics, Frigate NVR, and modern network security.",
+      "description": "Providing expert solutions in CCTV, Fiber Optics, Frigate NVR, and modern network security in Olongapo City.",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -58,6 +58,7 @@
             "Wednesday",
             "Thursday",
             "Friday",
+            "Saturday"
           ],
           "opens": "09:00",
           "closes": "17:00"
@@ -114,6 +115,7 @@
             <a href="#" class="text-2xl font-bold text-white">WNS<span class="text-sky-400">5</span></a>
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="#services" class="hover:text-sky-400 transition-colors">Services</a>
+                <a href="#ai-assessor" class="hover:text-sky-400 transition-colors">AI Assessor</a>
                 <a href="#about" class="hover:text-sky-400 transition-colors">About Us</a>
                 <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-transform hover:scale-105">Contact</a>
             </div>
@@ -126,6 +128,7 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
             <a href="#services" class="block py-2 px-4 text-sm hover:bg-slate-700">Services</a>
+            <a href="#ai-assessor" class="block py-2 px-4 text-sm hover:bg-slate-700">AI Assessor</a>
             <a href="#about" class="block py-2 px-4 text-sm hover:bg-slate-700">About Us</a>
             <a href="#contact" class="block py-2 px-4 text-sm hover:bg-slate-700">Contact</a>
         </div>
@@ -189,6 +192,27 @@
             </div>
         </section>
 
+        <!-- AI Security Assessor Section -->
+        <section id="ai-assessor" class="py-20">
+            <div class="container mx-auto px-6 text-center bg-slate-800/50 rounded-2xl py-12">
+                <h2 class="text-3xl font-bold text-white">
+                    ✨ AI-Powered Security Assessor ✨
+                </h2>
+                <p class="mt-4 max-w-2xl mx-auto text-slate-400">
+                    Not sure what you need? Describe your property or security concerns below, and our AI will generate a tailored system recommendation for you.
+                </p>
+                <div class="mt-8 max-w-3xl mx-auto">
+                    <textarea id="property-description" class="w-full h-32 p-4 bg-slate-900 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:ring-2 focus:ring-sky-500 focus:outline-none transition" placeholder="e.g., 'I have a two-story home with a front gate, a backyard, and a small shop on the ground floor. I'm concerned about break-ins at night.'"></textarea>
+                    <button id="get-recommendation-btn" class="mt-4 w-full md:w-auto inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform hover:scale-105 shadow-lg shadow-sky-500/20 disabled:bg-slate-600 disabled:cursor-not-allowed">
+                        Get AI Recommendation
+                    </button>
+                </div>
+                <div id="recommendation-result" class="mt-8 text-left max-w-3xl mx-auto bg-slate-900 p-6 rounded-lg border border-slate-700 hidden prose prose-invert prose-p:text-slate-400 prose-strong:text-white">
+                    <!-- AI response will be injected here -->
+                </div>
+            </div>
+        </section>
+
         <!-- About Us Section -->
         <section id="about" class="py-20 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
@@ -223,7 +247,7 @@
             <p class="mt-4 max-w-2xl mx-auto text-slate-400">
                 Let's discuss your security needs. Contact us today for a no-obligation consultation and find out how we can help protect what matters most to you.
             </p>
-            <a href="mailto:contact@wns5.example.com" class="mt-8 inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform hover:scale-105 shadow-lg shadow-sky-500/20">
+            <a href="mailto:cctv.nvr.cameras@gmail.com" class="mt-8 inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform hover:scale-105 shadow-lg shadow-sky-500/20">
                 Contact Us
             </a>
         </div>
@@ -232,7 +256,7 @@
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800">
         <div class="container mx-auto px-6 py-6 text-center text-slate-500">
-            <p>&copy; 2024 WNS5. All Rights Reserved.</p>
+            <p>&copy; 2025 WNS5. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -259,12 +283,86 @@
         });
 
         // Close mobile menu when a link is clicked
-        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
-        for (let link of mobileMenuLinks) {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+        const navLinks = document.querySelectorAll('#mobile-menu a, header nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if(e.currentTarget.href.includes('#')) {
+                    mobileMenu.classList.add('hidden');
+                }
             });
-        }
+        });
+
+        // Gemini API Integration for AI Security Assessor
+        const getRecommendationBtn = document.getElementById('get-recommendation-btn');
+        const propertyDescription = document.getElementById('property-description');
+        const recommendationResult = document.getElementById('recommendation-result');
+
+        getRecommendationBtn.addEventListener('click', async () => {
+            const userInput = propertyDescription.value;
+            if (!userInput.trim()) {
+                recommendationResult.innerHTML = '<p class="text-red-400">Please describe your property first.</p>';
+                recommendationResult.classList.remove('hidden');
+                return;
+            }
+
+            // Show loading state
+            getRecommendationBtn.disabled = true;
+            getRecommendationBtn.innerHTML = `
+                <span class="flex items-center justify-center">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Generating...
+                </span>`;
+            recommendationResult.classList.remove('hidden');
+            recommendationResult.innerHTML = '<p>Analyzing your needs and preparing a recommendation...</p>';
+
+            const systemPrompt = "You are a professional security solutions consultant for WNS5, a company in the Philippines specializing in CCTV, Fiber Optics, and Frigate NVR. Your tone is expert, helpful, and reassuring. When a user describes their property, provide a concise, well-structured security solution recommendation. The current location is Olongapo City, Central Luzon, Philippines. Structure your response using Markdown with the following sections: **Summary**, **Recommended CCTV Setup**, **Network Solution (Fiber Optics)**, and **NVR Recommendation (Frigate)**. Be specific and practical in your suggestions. Do not output the markdown ``` characters.";
+            const userQuery = userInput;
+            const apiKey = ""; // Canvas will provide this
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+            
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                },
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const errorBody = await response.text();
+                    throw new Error(`API error: ${response.status} ${response.statusText} - ${errorBody}`);
+                }
+
+                const result = await response.json();
+                const candidate = result.candidates?.[0];
+                let text = candidate?.content?.parts?.[0]?.text;
+
+                if (text) {
+                     // Basic Markdown to HTML conversion
+                    text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Bold
+                    text = text.replace(/\n/g, '<br>'); // Newlines
+                    recommendationResult.innerHTML = text;
+                } else {
+                    throw new Error("No content received from the API.");
+                }
+
+            } catch (error) {
+                console.error("Gemini API call failed:", error);
+                recommendationResult.innerHTML = '<p class="text-red-400">Sorry, we couldn\'t generate a recommendation at this time. Please try again later.</p>';
+            } finally {
+                getRecommendationBtn.disabled = false;
+                getRecommendationBtn.innerHTML = 'Get AI Recommendation';
+            }
+        });
     </script>
 
 </body>
