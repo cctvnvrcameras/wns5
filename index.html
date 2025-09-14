@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WNS5 - Smart Surveillance & Network Solutions</title>
+    <meta name="description" content="Expert solutions in CCTV, Fiber Optics, Frigate NVR, and modern network security.">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0f172a">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://placehold.co/192x192/0f172a/ffffff?text=WNS5">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Simple scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
+
+    <!-- Header -->
+    <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">WNS<span class="text-sky-400">5</span></a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#services" class="hover:text-sky-400 transition-colors">Services</a>
+                <a href="#about" class="hover:text-sky-400 transition-colors">About Us</a>
+                <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-transform hover:scale-105">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
+            <a href="#services" class="block py-2 px-4 text-sm hover:bg-slate-700">Services</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-slate-700">About Us</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-slate-700">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section class="text-center py-20 md:py-32">
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                Smart Surveillance, <span class="text-sky-400">Seamless Connections.</span>
+            </h1>
+            <p class="mt-4 max-w-3xl mx-auto text-lg text-slate-400">
+                CCTV, Fiber Optics, Frigate NVR Deployment, and Network Solutions Built for Modern Security.
+            </p>
+            <a href="#contact" class="mt-8 inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform hover:scale-105 shadow-lg shadow-sky-500/20">
+                Get a Free Consultation
+            </a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <h2 class="text-3xl font-bold text-center text-white mb-12">Our Core Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 hover:border-sky-500 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-sky-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Advanced CCTV Systems</h3>
+                    <p class="text-slate-400">High-definition surveillance cameras and systems tailored for residential, commercial, and industrial use.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 hover:border-sky-500 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-sky-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071a7.5 7.5 0 0110.606 0M15.89 9.11a5.5 5.5 0 010 7.778"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Fiber Optic Networks</h3>
+                    <p class="text-slate-400">Reliable, high-speed fiber optic cabling for seamless data transmission and superior network performance.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 hover:border-sky-500 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-sky-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Frigate NVR Deployment</h3>
+                    <p class="text-slate-400">Intelligent, real-time AI object detection with Frigate NVR. We handle full setup, and integration.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 hover:border-sky-500 transition-all duration-300 transform hover:-translate-y-2">
+                   <div class="text-sky-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m-9 9a9 9 0 019-9"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Network Solutions</h3>
+                    <p class="text-slate-400">Robust network design, setup, and management to ensure your security infrastructure is always online.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Our+Team" alt="Team working on network solutions" class="rounded-xl shadow-2xl w-full">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-white mb-4">Why Choose WNS5?</h2>
+                <p class="text-slate-400 mb-6">We are a team of dedicated professionals passionate about providing top-tier security and network solutions. We believe in building systems that are not just effective, but also reliable and easy to manage. Our focus on modern technology like Frigate NVR and fiber optics ensures your property is protected by the best tools available.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-sky-400 mr-3 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <span><strong class="text-white">Expertise:</strong> Deep knowledge in both legacy and modern security systems.</span>
+                    </li>
+                     <li class="flex items-start">
+                        <svg class="h-6 w-6 text-sky-400 mr-3 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <span><strong class="text-white">Reliability:</strong> We build robust systems that you can count on 24/7.</span>
+                    </li>
+                     <li class="flex items-start">
+                        <svg class="h-6 w-6 text-sky-400 mr-3 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <span><strong class="text-white">Custom Solutions:</strong> Security isn't one-size-fits-all. We tailor every project to your specific needs.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="bg-slate-800/50 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white">Ready to Secure Your Future?</h2>
+            <p class="mt-4 max-w-2xl mx-auto text-slate-400">
+                Let's discuss your security needs. Contact us today for a no-obligation consultation and find out how we can help protect what matters most to you.
+            </p>
+            <a href="mailto:cctv.nvr.cameras@gmail.com" class="mt-8 inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform hover:scale-105 shadow-lg shadow-sky-500/20">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-500">
+            <p>&copy; 2024 WNS5. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // PWA Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/wns5/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
