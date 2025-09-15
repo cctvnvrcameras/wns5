@@ -1,14 +1,13 @@
-// A simple service worker for caching assets for offline use.
-
-const CACHE_NAME = 'wns5-cache-v1';
+const CACHE_NAME = 'wns5-cache-v1'; // Change the version number when you update files
 const urlsToCache = [
+  '/',
   '/wns5/',
   '/wns5/index.html',
-  // Note: We don't cache external resources like Tailwind CSS or Google Fonts
-  // as that can be complex. This basic setup ensures the core page is available offline.
+  '/wns5/team/team_expert.png',
+  // Add other important files here like CSS or other images
 ];
 
-// Install event: opens a cache and adds the core assets.
+// 1. Installation: Cache the core files
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -17,9 +16,28 @@ self.addEventListener('install', event => {
         return cache.addAll(urlsToCache);
       })
   );
+  self.skipWaiting(); // Force the new service worker to become active
 });
 
-// Fetch event: serves assets from cache if they exist.
+// 2. Activation: Clean up old caches
+self.addEventListener('activate', event => {
+  const cacheWhitelist = [CACHE_NAME];
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            console.log('Deleting old cache:', cacheName);
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+  return self.clients.claim(); // Take control of open clients immediately
+});
+
+// 3. Fetch: Serve from cache first, then network
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
@@ -32,21 +50,5 @@ self.addEventListener('fetch', event => {
         return fetch(event.request);
       }
     )
-  );
-});
-
-// Activate event: removes old caches.
-self.addEventListener('activate', event => {
-  const cacheWhitelist = [CACHE_NAME];
-  event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
   );
 });
